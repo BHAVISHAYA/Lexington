@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memphis-Hickory-Sauce</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+     
+    <link rel="stylesheet" href="ItemsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Page 1(Header) Starts From Here  -->
+    <div class="container-fluid">
+        <div class="row justify-content-between align-items-baseline mt-2 d-none d-lg-flex">
+            <!-- For bigger screens -->
+            <!-- Company Name -->
+            <div class="col-lg-2 companyName gopher-font ">
+                <a href="index.html">Lexington</a>
+            </div>
+
+            <!-- Menu Bar -->
+            <div class="col-lg-5 gopher-font menuBar">
+                <ul class="list-group list-group-horizontal d-flex justify-content-between">
+                    <li style="text-decoration: underline;">
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="">Videos</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Cart (<span class="cartValue">0</span>)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- For Mobile Screens -->
+        <div class="row gopher-font d-lg-none py-5 justify-content-between align-items-center">
+            <div class="col-3 signs">
+                <ul class="list-group list-group-horizontal d-flex gap-3" style="font-size: 2rem; font-weight: 300;">
+                    <li>
+                        <a href="nav.html">
+                            <i class="fa-solid fa-plus" style="font-weight: 100;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">(<span class="cartValue">0</span>)</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="index.html" class="col-3 company-name-mobile-view text-center" style="font-size: 2rem;">
+                Lexington
+            </a>
+        </div>
+    </div>
+
+
+    
+
+    <!-- Page 2 (Select Quantity Page) Starts From Here  -->
+    <div class="container-fluid quantityPage py-5">
+        <div class="row">
+            <div class="col-md-6 px-5 d-none d-md-block">
+                <img class="img-fluid pb-3" src="https://images.squarespace-cdn.com/content/v1/62e3fa7e6f756f292636cef0/1660158509692-K5JZZULM54FKUGUSHC0G/MemphisHickory.jpg?format=1000w" alt="">
+                <img class="img-fluid" src="https://images.squarespace-cdn.com/content/v1/62e3fa7e6f756f292636cef0/1659107976635-S58S6B2W2EGVSOGUXX55/Stocksy_comp_2774535-min.jpg?format=1000w" alt="">
+            </div>
+            <div class="col-md-6 d-md-none d-block px-5">
+                <img class="img-fluid" src="https://images.squarespace-cdn.com/content/v1/62e3fa7e6f756f292636cef0/1660158509692-K5JZZULM54FKUGUSHC0G/MemphisHickory.jpg?format=1000w" alt="">
+            </div>
+            <div id="addItems" class="col-md-6 p-5 mt-5">
+                <h1 class="gopher-font">Memphis Hickory Sauce</h1>
+                <p class="gopher-font pt-3">
+                    <span id="displayAmount">
+                        from $14.99
+                    </span> 
+                    <!-- <span id="spanText" class="d-none" style="text-decoration: line-through;">
+                        $14.99
+                    </span> -->
+                </p>
+                <p class="gopher-font d-none d-md-block" style="font-weight: 500;">
+                    It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+                </p>
+                <div class="row d-flex pt-3 pb-5 gap-md-5 gap-lg-4 gap-2">
+                    <small class="gopher-font">SIZE :</small>
+                    <div class="col-md-3">
+                        <button id="1" class="gopher-font" style="padding: 16px 30.72px; border : 3px solid black; border-radius: 30px;" onclick="changeText('1')">
+                            1 Bottle
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="2" class="gopher-font" style="padding: 16px 30.72px; border : 3px solid black; border-radius: 30px;" onclick="changeText('2')">
+                            2 Pack
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="4" class="gopher-font" style="padding: 16px 30.72px; border : 3px solid black; border-radius: 30px;" onclick="changeText('4')">
+                            4 Pack
+                        </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="6" class="gopher-font" style="padding: 16px 30.72px; border : 3px solid black; border-radius: 30px;" onclick="changeText('6')">
+                            6 Pack
+                        </button>
+                    </div>
+                </div>
+                <small class="gopher-font">QUANTITY :</small>
+                <br>
+                <input id="getQuantity" class="gopher-font mt-2" type="number" style="width: 100px;" value="1" min="1" max="5">
+                <br>
+                <button id="addToCart" class="gopher-font my-5" style="border : 3px solid black; padding: 20px 70px; border-radius: 50%;" onclick="addingToCart()">
+                    ADD TO CART
+                </button>
+                <p class="gopher-font d-md-none d-block" style="font-weight: 500;">
+                    It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Page 3 (Item Ingredients, Nutrition Facts, Regional Information) -->
+    <div class="container-fluid itemInfo pb-5">
+        <div class="row justify-content-md-start justify-content-center">
+            <h1 class="gopher-font py-5 px-5">
+                No artificial flavors. No added sugar. Just sauce.
+            </h1>
+            <div class="col-8 gopher-font mt-4 mx-0 mx-md-5" style="border-top : 2px solid black;">
+                <h3 class="pt-3">Regional Information</h3>
+                <p>
+                    It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. ext goes here
+                </p>
+            </div>
+            <div class="col-8 gopher-font mx-0 mx-md-5" style="border-top : 2px solid black;">
+                <h3 class="pt-3">Ingredients</h3>
+                <p>
+                    It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. ext goes here
+                </p>
+            </div>
+            <div class="col-8 gopher-font pt-3 mx-0 mx-md-5" style="border-top : 2px solid black; border-bottom : 2px solid black;">
+                <h3>Nutrition Facts</h3>
+                <p>
+                    It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. ext goes here
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Page 4 (Other Products) -->
+    <div class="conatiner-fluid otherProducts mx-3">
+        <div class="row text-center">
+            <h1 class="gopher-font text-md-start text-center p-5">You might also like</h1>
+            <a href="Item_1_SecretSauce.html" class="col-md-4 px-5 px-md-5 py-md-5 firstImage">
+                <img id="productImg" class="img-fluid" src="https://images.squarespace-cdn.com/content/v1/62e3fa7e6f756f292636cef0/1660158811770-V52HTC9WO9IZ2G8W7N9X/AlabamaWhite.jpg?format=1000w" alt="Secret Sauce - Lexington">
+                <div class="secondImage">
+                    <img class="img-fluid image_1" src="https://images.squarespace-cdn.com/content/v1/62e3fa7e6f756f292636cef0/1659107976635-S58S6B2W2EGVSOGUXX55/Stocksy_comp_2774535-min.jpg?format=1000w" alt="">
+                </div>
+                <h2 class="gopher-font pt-5">Signature Secret Sauce</h2>
+                <p class="gopher-font" style="font-weight: 500;">
+                    FROM $9.99
+                    <br>
+                    <small class="gopher-font pt-0" style="color: #FFC700;">SALE</small>
+                </p>
+            </a>
+            <a href="Item_2_WhiskeyMapleSauce.html" class="col-md-4 p-5 firstImage">
+                <img id="productImg" class="img-fluid" src="https://images.squarespace-cdn.com/content/v1/62e3fa7e6f756f292636cef0/1660158716696-YGM6WASIB6W1GCKPHO0N/WhiskeyMaple.jpg?format=1000w" alt="Whiskey Maple - Lexington">
+                <div class="secondImage">
+                    <img class="img-fluid image_2" src="https://images.squarespace-cdn.com/content/v1/62e3fa7e6f756f292636cef0/1659107976603-23OVW4DNCJ9RUY60I87D/ProductIMG1.jpg?format=1000w" alt="">
+                </div>
+                <h2 class="gopher-font pt-5">Whiskey Maple Sauce</h2>
+                <p class="gopher-font" style="font-weight: 500;">FROM $14.99</p>
+            </a>
+            <a href="Item_3_Carolina_Gold_Sauce.html" class="col-md-4 p-5 firstImage">
+                <img id="productImg" class="img-fluid" src="https://images.squarespace-cdn.com/content/v1/62e3fa7e6f756f292636cef0/1660158754799-4WEUXQ6U3L1ZCNDX9JZS/CarolinaGold.jpg?format=1000w" alt="Carolina Gold - Lexington">
+                <div class="secondImage">
+                    <img class="img-fluid image_3" src="https://images.squarespace-cdn.com/content/v1/62e3fa7e6f756f292636cef0/1659107976674-7XH4FNMWKE33RDS728J1/ProductIMG12.jpg?format=1000w" alt="">
+                </div>
+                <h2 class="gopher-font pt-5">Carolina Gold Sauce</h2>
+                <p class="gopher-font" style="font-weight: 500;">FROM $14.99</p>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Page 9(Contact) Starts From Here -->
+    <div class="container-fluid page9 pt-5">
+        <div class="row justify-content-between">
+            <div class="col-md-3 col-6 mx-4 mx-md-0 pb-5">
+                <ul class="gopher-font">
+                    <li class="pb-3" style="color: #979695;">EXPLORE</li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-7 mx-4 mx-md-0 gopher-font pb-5">
+                <p style="color: #979695;">CONNECT WITH US</p>
+                <ul class="list-group list-group-horizontal">
+                    <li class="pr-3" style="font-size: 3rem;">
+                        <i class="fa-brands fa-instagram text-light"></i>
+                    </li>
+                    <li class="px-3" style="font-size: 3rem;">
+                        <i class="fa-brands fa-twitter text-light"></i>
+                    </li>
+                    <li class="pl-3" style="font-size: 3rem;">
+                        <i class="fa-brands fa-youtube text-light"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-10 mx-4 mx-md-0 gopher-font pb-5">
+                <p style="color: #979695;">LET’S BE FRIENDS</p>
+                <p style="color: #F4F4F3; font-size: 1.3rem;">
+                    Drop your email address to receive news and updates. No spam (scout’s honor)
+                </p>
+                <input type="email" placeholder="Email Address">
+                <button class=" gopher-font">Sign Up</button>
+            </div>
+        </div>
+        <div class="row gopher-font text-light got-sauce justify-content-center">
+            Got Sauce?
+        </div>
+    </div>
+
+    <!-- JavaScript Starts From Here -->
+    <script type="text/javascript">
+                
+        let goForward = 0;
+        const changeText = (getNumber) => {
+            if(getNumber == 1) {
+                document.getElementById("displayAmount").innerText = `$14.99`;
+                // document.getElementById("spanText").innerText = `$14.99`;
+                goForward = 1;
+                (document.getElementById(getNumber)).style.backgroundColor = "#FFC700";
+                (document.getElementById("2")).style.backgroundColor = "#F4F4F3";
+                (document.getElementById("4")).style.backgroundColor = "#F4F4F3";
+                (document.getElementById("6")).style.backgroundColor = "#F4F4F3";
+            }
+            else if(getNumber == 2) {
+                document.getElementById("displayAmount").innerText = `$24.99`;
+                // document.getElementById("spanText").innerText = `$24.99`;
+                goForward = 1;
+                (document.getElementById(getNumber)).style.backgroundColor = "#FFC700";
+                (document.getElementById("1")).style.backgroundColor = "#F4F4F3";
+                (document.getElementById("4")).style.backgroundColor = "#F4F4F3";
+                (document.getElementById("6")).style.backgroundColor = "#F4F4F3";
+            }
+            else if(getNumber == 4) {
+                document.getElementById("displayAmount").innerText = `$44.99`;
+                // document.getElementById("spanText").innerText = `$44.99`;
+                goForward = 1;
+                (document.getElementById(getNumber)).style.backgroundColor = "#FFC700";
+                (document.getElementById("1")).style.backgroundColor = "#F4F4F3";
+                (document.getElementById("2")).style.backgroundColor = "#F4F4F3";
+                (document.getElementById("6")).style.backgroundColor = "#F4F4F3";
+            }
+            else {
+                document.getElementById("displayAmount").innerText = `$59.99`;
+                // document.getElementById("spanText").innerText = `$59.99`;
+                goForward = 1;
+                (document.getElementById(getNumber)).style.backgroundColor = "#FFC700";
+                (document.getElementById("1")).style.backgroundColor = "#F4F4F3";
+                (document.getElementById("2")).style.backgroundColor = "#F4F4F3";
+                (document.getElementById("4")).style.backgroundColor = "#F4F4F3";
+            }
+        } 
+
+
+
+        // Logic 
+        // if(goForward == 1) {
+        //     then only we are able to click on add to cart button 
+        //     else  
+        //     show alert("Please select size to go forward");
+        // }
+
+        const addingToCart = () => {
+            if(goForward == 1) {
+                let stopAdding = setInterval(() => {
+                    document.getElementById("addToCart").innerText = "Adding...";
+                    // document.getElementById("addToCart").style.backgroundColor = "#000000";
+                    // document.getElementById("addToCart").style.color = "#F4F4F3";
+                }, 500);
+                let clearAdding = setTimeout(() => {
+                    clearInterval(stopAdding);
+                    let stopAdded =  setInterval(() => {
+                        document.getElementById("addToCart").innerText = "Added!";
+                    }, 500);
+
+                    
+                    // Changing Cart Value 
+                    let cartCurrValue = document.getElementsByClassName("cartValue")[0].innerText;
+                    let cartCurrValue2 = document.getElementsByClassName("cartValue")[1].innerText;
+                    cartCurrValue = parseInt(cartCurrValue);
+                    cartCurrValue2 = parseInt(cartCurrValue2);
+                    let quantityNeeded = document.getElementById("getQuantity").value;
+                    quantityNeeded = parseInt(quantityNeeded);
+                    cartCurrValue += quantityNeeded;
+                    cartCurrValue2 += quantityNeeded;
+                    document.getElementsByClassName("cartValue")[0].innerText = cartCurrValue;
+                    document.getElementsByClassName("cartValue")[1].innerText = cartCurrValue2;
+
+
+                    let clearAdded = setTimeout(() => {
+                        clearInterval(stopAdded);
+                        document.getElementById("addToCart").innerText = "ADD TO CART";
+                    }, 3000);
+                }, 3000);
+            }
+            else {
+                alert("Please select size to proceed forward");
+            }
+        }
+    </script>
+</body>
+</html>

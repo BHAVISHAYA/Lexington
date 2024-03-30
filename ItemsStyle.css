@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F4F3;
+    color: #000000;
+}
+
+.gopher-font {
+    font-family: gopher, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+
+/* Page 1 -> Nav Bar CSS starts from here  */
+.companyName {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    margin-right: 1rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+/* Quantity Select Page Starts From Here  */
+.quantityPage h1 {
+    font-size: 4rem;
+}
+
+.quantityPage #displayAmount, .quantityPage #spanText {
+    font-size: 1.5rem;
+}
+
+.quantityPage p {
+    font-size: 1.2rem;
+}
+
+#addToCart:hover {
+    background-color: black;
+    color: white;
+}
+
+.quantityPage button:hover {
+    background-color: #FFC700;
+}
+
+
+
+
+
+/* Collapse Data Page Starts From here  */
+.itemInfo h1 {
+    font-size: 3.9rem;
+    text-align: center;
+}
+
+.itemInfo h3 {
+    font-weight: 600;
+}
+
+.itemInfo p {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+/* Page 4 (Other Products) */
+.firstImage {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Content */
+.secondImage {
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.otherProducts h1 {
+    font-size: 4rem;
+}
+
+.otherProducts img {
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.firstImage:hover .secondImage {
+    top: 0;
+}
+
+#productImg:hover {
+    box-shadow: 3px 3px 11px rgba(33,33,33,.2);
+}
+
+.image_1 {
+    height: auto;
+    padding: 43px 48px;
+}
+
+.image_2 {
+    height: auto;
+    padding: 35px 48px;
+}
+
+.image_3 {
+    height: auto;
+    padding: 51px 48px;
+}
+
+.image_4 {
+    height: auto;
+    padding: 51px 48px;
+}
+
+.image_5 {
+    height: auto;
+    padding: 44px 48px;
+}
+
+
+
+
+
+/* Page 9 -> CSS starts from here  */
+.page9 {
+    background-color: #000000;
+}
+
+.page9 li a {
+    color: #FFC700;
+    text-decoration: underline;
+}
+.page9 ul {
+    margin: 0;
+}
+
+.page9 ul li {
+    color: #F4F4F3;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.page9 p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+input {
+    padding: 14px;
+    width: 50%;
+}
+
+.page9 button {
+    background-color: #000000;
+    color: #FFC700;
+    padding: 12px;
+    margin-left: 20px;
+    border: 2px solid #FFC700;
+    border-radius: 50% 50%;
+    -webkit-border-radius: 50% 50%;
+    -moz-border-radius: 50% 50%;
+    -ms-border-radius: 50% 50%;
+    -o-border-radius: 50% 50%;
+}
+
+.page9 button:hover {
+    background-color: #FFC700;
+    color: #000000;
+}
+
+.got-sauce {
+    font-size: 17rem;
+}
+
+
+
+
+
+
+/* Media Query starts from here  */
+@media screen and (max-width : 1550px) {
+    .got-sauce {
+        font-size: 16rem;
+    }
+    .itemInfo h1 {
+        font-size: 3.8rem;
+    }
+}
+
+@media screen and (max-width : 1450px) {
+    .startingLine p {
+        font-size: 14rem;
+    }
+    .page3 h4 {
+        font-size: 4.5rem;
+    }
+    .got-sauce {
+        font-size: 15rem;
+    }
+    .itemInfo h1 {
+        font-size: 3.6rem;
+    }
+}
+
+
+@media screen and (max-width : 1354px) {
+    .startingLine p {
+        font-size: 13rem;
+    }
+    .got-sauce {
+        font-size: 14rem;
+    }
+    .itemInfo h1 {
+        font-size: 3.3rem;
+    }
+}
+
+@media screen and (max-width : 1260px) {
+    .startingLine p {
+        font-size: 11.5rem;
+    }
+    .startingLine img {
+        height: 800px;
+    }
+    .page3 h4 {
+        font-size: 4rem;
+    }
+    .page3 p {
+        font-size: 1.5rem;
+    }
+    .page8 h1 {
+        font-size: 6rem;
+    }
+    .got-sauce {
+        font-size: 13rem;
+    }
+    .itemInfo h1 {
+        font-size: 3.01rem;
+    }
+}
+
+@media screen and (max-width : 1160px) {
+    .page3 h4 {
+        font-size: 3.5rem;
+    }
+    .page3 p {
+        font-size: 1.4rem;
+    }
+    .got-sauce {
+        font-size: 12rem;
+    }
+    .itemInfo h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width : 1120px) {
+    .startingLine p {
+        font-size: 10rem;
+    }
+    .signs {
+        margin-left: 40px;
+    }
+    .startingLine img {
+        width: 80%;
+        height: 800px;
+    }
+    .page7 h1 {
+        font-size: 6rem;
+    }
+    .page8 h1 {
+        font-size: 5rem;
+    }
+    .page8 p {
+        font-size: 1.3rem;
+    }
+    .got-sauce {
+        font-size: 11rem;
+    }
+    .itemInfo h1 {
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width : 1050px) {
+    .page3 h4 {
+        font-size: 3.3rem;
+    }
+    .page5 h1 {
+        font-size: 6.5rem;
+    }
+    .page7 h1 {
+        font-size: 5.6rem;
+    }
+    .itemInfo h1 {
+        font-size: 2.55rem;
+    }
+}
+
+@media screen and (max-width : 980px) {
+    .startingLine p {
+        font-size: 9rem;
+    }
+    .page3 h4 {
+        font-size: 2.8rem;
+    }
+    .page3 p {
+        font-size: 1.2rem;
+    }
+    .page5 h1 {
+        font-size: 6.3rem;
+    }
+    .page7 h1 {
+        font-size: 5.3rem;
+    }
+    .got-sauce {
+        font-size: 10rem;
+    }
+    .itemInfo h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width : 890px) {
+    .startingLine p {
+        font-size: 8rem;
+    }
+    .company-name-mobile-view {
+        margin-right: 30px;
+    }
+    .startingLine img {
+        width: 80%;
+        height: 700px;
+    }
+    .page3 h4 {
+        font-size: 2.5rem;
+    }
+    .page3 p {
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+    .page5 h1 {
+        font-size: 6rem;
+    }
+    .page7 h1 {
+        font-size: 5rem;
+    }
+    .page8 h1 {
+        font-size: 4rem;
+    }
+    .page8 p {
+        font-size: 1.2rem;
+    }
+    .got-sauce {
+        font-size: 9rem;
+    }
+    .itemInfo h1 {
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (max-width : 810px) {
+    .got-sauce {
+        font-size: 8rem;
+    }
+    .itemInfo h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width : 782px) {
+    .startingLine p {
+        font-size: 6rem;
+    }
+    .company-name-mobile-view {
+        margin-right: 40px;
+    }
+    .startingLine img {
+        width: 80%;
+        height: 700px;
+    }
+    .page5 h1 {
+        font-size: 4.5rem;
+    }
+    .page7 {
+        text-align: center;
+    }
+    .page7 h1 {
+        font-size: 4rem;
+    }
+    .page9 ul {
+        padding: 0;
+    }
+    .got-sauce {
+        font-size: 7rem;
+    }
+    .itemInfo h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width : 650px) {
+    .got-sauce {
+        font-size: 6rem;
+    }
+    .itemInfo h1 {
+        font-size: 1.5rem;
+    }
+    .itemInfo h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width : 603px) {
+    .startingLine p {
+        font-size: 5rem;
+    }
+    .company-name-mobile-view {
+        margin-right: 50px;
+    }
+    .startingLine img {
+        width: 80%;
+        height: 500px;
+    }
+    .page5 h1 {
+        font-size: 3.7rem;
+    }
+    .page7 h1 {
+        font-size: 3rem;
+    }
+    .got-sauce {
+        font-size: 5.5rem;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .startingLine p {
+        font-size: 4rem;
+    }
+    .company-name-mobile-view {
+        margin-right: 70px;
+    }
+    .startingLine img {
+        height: 450px;
+    }
+    .signs {
+        margin-left: 4px;
+    }
+    .page5 h1 {
+        font-size: 3rem;
+    }
+    .page7 h1 {
+        font-size: 2.5rem;
+    }
+    .page7 p {
+        font-size: 1.1rem;
+    }
+    .page8 h1 {
+        font-size: 3rem;
+    }
+    .got-sauce {
+        font-size: 4.5rem;
+    }
+    .otherProducts h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width : 403px) {
+    .startingLine p {
+        font-size: 3rem;
+    }
+    .startingLine img {
+        height: 400px;
+    }
+    .company-name-mobile-view {
+        margin-right: 100px;
+    }
+    .page5 h1 {
+         font-size: 2.1rem;
+    }
+    .page7 h1 {
+        font-size: 2rem;
+    }
+    .page8 h1 {
+        font-size: 2.5rem;
+    }
+    .page8 p {
+        font-size: 1.rem;
+    }
+    .got-sauce {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    .got-sauce {
+        font-size: 3.3rem;
+    }
+}
+
+@media screen and (max-width : 300px) {
+    .startingLine p {
+        font-size: 2.5rem;
+    }
+    .page5 h1 {
+        font-size: 2rem;
+    }
+    .page9 button {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .got-sauce {
+        font-size: 2.3rem;
+    }
+}
